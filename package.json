@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "webpack-dev-server --config webpack.dev.js --open",
+    "dry": "webpack --config webpack.dev.js --watch",
     "build": "webpack --config webpack.prod.js",
     "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
@@ -32,7 +32,6 @@
     "terser-webpack-plugin": "^5.3.3",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {

@@ -17,13 +17,6 @@ module.exports = merge(webpackCommon, {
 		)
 	],
 	devtool: "inline-source-map",
-	devServer: {
-		static: "./dist",
-		hot: true
-	},
-	optimization: {
-		runtimeChunk: "single"
-	},
 	module: {
 		rules: [
 			{
