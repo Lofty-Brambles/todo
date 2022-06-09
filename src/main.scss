@@ -2,3 +2,6 @@
 @use "./styles/normalize.css";
 @use "./styles/var";
 
+body {
+	@include mix.flex();
+}
