@@ -1,3 +1,5 @@
+import img from "./../../assets/logo.png";
+
 export const sidebarcreate = () => {
 	const sideBar = document.createElement("div");
 	sideBar.classList.add("sidebar");
@@ -22,7 +24,7 @@ export const sidebarcreate = () => {
 		contentLeft.classList.add("section-title");
 		contentRight.classList.add("more-menu");
 		contentRight.innerHTML = `<span class="material-symbols-outlined">
-			more</span>`;
+			expand_more</span>`;
 
 		top.appendChild(contentLeft);
 		top.appendChild(contentRight);
@@ -40,7 +42,7 @@ export const sidebarcreate = () => {
 
 		logoImg.classList.add("logo-img");
 		logoImg.classList.add("block");
-		logoImg.src = "./../../assets/";
+		logoImg.src = img;
 		logoImg.alt = "logo";
 
 		logoTxt.classList.add("logo-txt");

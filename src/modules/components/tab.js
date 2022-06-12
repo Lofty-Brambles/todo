@@ -14,10 +14,20 @@ export const navcreate = () => {
 	function createIcon(name, iconTxt) {
 		const icon = document.createElement("div");
 		icon.classList.add("nav-icon");
+		icon.classList.add(name);
 		icon.setAttribute("id", name);
-		icon.innerHTML = `<span class="material-symbols-outlined md-48">
+		icon.innerHTML = `<span class="material-symbols-outlined md-40">
 			${iconTxt}</span>`;
-		return icon;
+
+		const iconPill = document.createElement("div");
+		iconPill.classList.add("nav-icon-pill");
+		icon.classList.add(name);
+
+		const iconWrapper = document.createElement("div");
+		iconWrapper.classList.add("nav-icon-wrapper");
+		iconWrapper.appendChild(iconPill);
+		iconWrapper.appendChild(icon);
+		return iconWrapper;
 	}
 
 	function addIcons(array) {

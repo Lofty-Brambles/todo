@@ -4,9 +4,14 @@ $fedora: "Federant", cursive;
 $flower: "Indie Flower", Helvetica, Arial, sans-serif;
 $titan: "Titan One", cursive;
 
-$light: #f1f5f9;
-$dark: #000;
-$l-dark: #777;
-$cyan: #0ff;
-$l-bloo: #09f;
-$bloo: #00f;
+.dark {
+	--light: #f1f5f9;
+	--dark: #111;
+	--m-l-dark: #333;
+	--l-dark: #555;
+	--l-m-dark: #666;
+	--l-l-dark: #777;
+	--med: #0ff;
+	--scroll-d: #a8bbbf;
+	--scroll-l: #d6dee1;
+}

@@ -1,6 +1,8 @@
 import { navcreate } from "./components/tab";
 import { sidebarcreate } from "./components/sidebar";
-import { mainbodycreate } from "./components/mainBody";
+import { mainbodycreate } from "./components/main-body";
+import { navListeners } from "./events/nav-listeners";
+import { btnListeners } from "./events/btn-listeners";
 
 function linkIcons() {
 	const link = document.createElement("link");
@@ -10,9 +12,15 @@ function linkIcons() {
 }
 
 function initPage() {
+	document.body.classList.add("dark");
 	document.body.appendChild(navcreate());
 	document.body.appendChild(sidebarcreate());
 	document.body.appendChild(mainbodycreate());
 }
 
-export {linkIcons, initPage};
+function initListeners() {
+	navListeners();
+	btnListeners();
+}
+
+export {linkIcons, initPage, initListeners};

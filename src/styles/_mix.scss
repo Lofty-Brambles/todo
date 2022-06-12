@@ -1,5 +1,9 @@
-.md-48 {
-	font-size: 48px !important;
+.md-40 {
+	font-size: 40px !important;
+}
+
+.md-32 {
+	font-size: 32px !important;
 }
 
 .block {
@@ -61,4 +65,8 @@
 	  background: radial-gradient(ellipse at center, $start-color, $end-color);
 
 	}
+}
+
+@mixin boxall {
+	border: red 0.5rem solid;
 }
