@@ -18,7 +18,7 @@ export function loadTheme() {
 
 				content: themer(),
 				buttons: {
-					cancel: true,
+					cancel: false,
 					confirm: true,
 				},
 

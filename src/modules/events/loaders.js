@@ -1,5 +1,8 @@
 function loadStars() {}
-function loadProjects() {}
+
+function loadProjects() {
+}
+
 function loadRepeats() {}
 function loadNotes() {}
 function loadStats() {}
