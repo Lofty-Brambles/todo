@@ -181,6 +181,53 @@ main {
 	}
 }
 
+.theming-div {
+	@include mix.flex(column);
+	& h4 {
+		font-family: var.$fedora;
+		color: var( --light );
+	}
+
+	& select {
+		@include mix.flex(column);
+		margin: 1.5rem;
+		padding: 0.125rem;
+		@include mix.box(10rem, 1.5rem);
+	}
+}
+
+body > [aria-hidden="true"] {
+	filter: blur(10px);
+}
+
+body > * {
+    transition: 0.15s filter linear;
+}
+
+.swal-modal {
+	background-color: var( --l-m-dark );
+	border: double var( --dark ) 0.25rem;
+}
+
+.swal-footer {
+	background-color: var( --m-l-dark );
+}
+
+.swal-title {
+	color: var( --light );
+}
+
+.swal-button--confirm {
+	background-color: var( --med );
+	color: var( --light );
+}
+
+.swal-icon--success::before, 
+.swal-icon--success::after,
+.swal-icon--success__hide-corners {
+	display: none;
+}
+
 ::-webkit-scrollbar {
 	width: 1rem;
 }
